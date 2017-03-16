@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单</title>
+</head>
+<body>
+
+<!--1 表单元素:
+            action:声明表单提交的目标;method/enctype-->
+<form>
+    <!--2 表单控件: 分为2种,input元素和其他元素
+                    input元素:文本框、密码框、单选框、复选框、提交按钮、重置按钮、普通按钮隐藏域、文本选择框；
+                      其他元素:label\下拉选\文本域-->
+
+
+    <!-- 由于input不是块标签,所以一般用段落p,单独一行-->
+    <p>
+        <!--value属性是默认值; maxlength属性:限制输入的字符数; readonly设置为只读-->
+        账号:  <input type="text" value="Daisy" maxlength="10" />
+    </p>
+    <p>
+        密码框: <input type="password"/>
+    </p>
+
+    <!-- 单选框
+                如果互斥要分组,name属性设置组名,同组radio彼此互斥-->
+    <p>
+        性别:
+        <input type="radio" name="sex" checked/>男
+        <input type="radio" name="sex" />女
+    </p>
+
+    <!-- 多选框 -->
+    <p>
+        兴趣:
+        <input type="checkbox" checked/>游泳
+        <input type="checkbox" checked/>篮球
+        <input type="checkbox"/>跑步
+        <input type="checkbox"/>骑行
+    </p>
+
+    <!-- 文件框 -->
+    <p>
+        上传文件:
+        <input type="file" />
+    </p>
+
+    <!-- 隐藏框 :看不见的文本框,用来传输秘密数据,数据通过value属性传给服务器 -->
+    <p>
+        <input type="hidden" value = "Daisy"/>
+    </p>
+
+
+    <p>
+        <!-- 提交按钮:触发表单数据的提交-->
+        <input type="submit" value="注册"/>
+        <!-- 重置按钮:将表单中的数据重置为初始值-->
+        <input type="reset" value="重置"/>
+        <!--普通按钮:默认没有功能,功能通过js自定义-->
+        <input type="button" value="测试"/>
+    </p>
+
+    <!-- 标签lable:用来管理表单中的文本,可以将文本与控件绑定,从而增大控件的受力面积-->
+        <!--给控件增加id; 在lable上增加for="id" (任何元素都有id属性,是元素的唯一标识)-->
+    <p>
+        <input type="checkbox" id="c1"/>
+        <label for="c1">我已阅读并自愿遵守此协议!</label>jhhh
+    </p>
+
+    <!-- 下拉选 -->
+        <!--属性 selected-->
+    <p>
+        城市:
+        <select>
+            <option>Java</option>
+            <option>Php</option>
+            <option selected>Python</option>
+        </select>
+    </p>
+
+    <!-- 文本域:多行文本-->
+    <p>
+        请输入你此时的感受:
+        <br>
+        <textarea cols="40" rows="2">
+
+        </textarea>
+    </p>
+</form>
+
+</body>
+</html>
