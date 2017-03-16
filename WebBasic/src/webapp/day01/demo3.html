@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>文本元素</title>
+</head>
+<body>
+<!--1 标题-->
+<h1>金花</h1>
+<h2>花花</h2>
+<h3>Daisy</h3>
+<!--2 段落-->
+<p>范传奇暗恋王克晶</p>
+<p>仓老师吃醋</p>
+
+<!--3 列表(有序&无序)-->
+<ol>
+    <li>上海</li>
+    <li>深圳</li>
+    <li><a href="#再放花生">广州</a></li>
+</ol>
+<ul>
+    <li>南京</li>
+    <li>上海</li>
+    <li>扬州</li>
+</ul>
+
+<!-- 3.3 列表嵌套 -->
+<ol>
+    <li>
+        Web概述
+        <ul>
+            <li>Web三要素</li>
+            <li>常用浏览器</li>
+            <li>HTML工作原理</li>
+        </ul>
+    </li>
+    <li>
+        陕西省
+        <ul>
+            <li>西安</li>
+            <li>宝鸡</li>
+            <li>咸阳</li>
+        </ul>
+    </li>
+</ol>
+
+<!--4.1 块分区 div-->
+
+<!--logo区-->
+<div>
+    <p>这里应该放一张logo图片</p>
+</div>
+<!-- 内容区 -->
+<div style="color: red;">
+    <h1>宫保鸡丁的做法</h1>
+    <p>先放鸡肉</p>
+    <p><a name = "再放花生"></a></p>
+</div>
+<!-- 版权申明+友情链接-->
+<div>
+    <p>版权标识</p>
+</div>
+
+<!--4.2 行内分区 span-->
+<p>宫爆鸡丁的做法<span style="color:red">先放鸡肉</span><span style="color: aqua">再放花生</span>这样宫保鸡丁就做好了.</p>
+
+<!--5 行内元素 br/i/em/b/u/del/strong-->
+
+<!-- 6 行内元素空格折叠原则:默认情况HTML中多个空格\制表符\换行符会压缩成单个空格即只显示一个空格,所以用<br>标签手工换行,其他用实体代替:HTML中常用的字符实体有空格 &nbsp;等-->
+<p>宫爆鸡丁<>做法<br>先放鸡肉   再放花生&nbsp;&nbsp;&nbsp;这样就做好了</p>
+</body>
+</html>

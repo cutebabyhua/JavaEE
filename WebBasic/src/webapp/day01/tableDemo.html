@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表格</title>
+</head>
+<body>
+
+<!--1 表格-->
+<table border="1" width="100%">
+
+    <tr>
+        <td>上海</td>
+        <!-- 1.1 跨行属性,设置跨2列-->
+        <td colspan="2">江苏</td>
+    </tr>
+    <tr>
+        <!-- 1.1 跨列属性,设置跨2列-->
+        <td rowspan="2">广州</td>
+        <td>北京</td>
+        <td>南京</td>
+    </tr>
+    <tr>
+        <td>宝应</td>
+        <td>高邮</td>
+    </tr>
+</table>
+
+<br>
+<!-- 2 行分组:表格可以划分为3个部分:表头\表主体\表尾-->
+<!--就是对行进行分组,目的是对某一行统一设置样式方便-->
+<table border="1" cellspacing="0" width="50%">
+    <thead>
+        <tr>
+            <td>编号</td>
+            <td>名称</td>
+            <td>金额</td>
+        </tr>
+    </thead>
+    <tbody style="color: red">
+        <tr>
+            <td>001</td>
+            <td>鼠标</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td>002</td>
+            <td>键盘</td>
+            <td>100</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="2">总计</td>
+            <td>150</td>
+        </tr>
+    </tfoot>
+</table>
+</body>
+</html>

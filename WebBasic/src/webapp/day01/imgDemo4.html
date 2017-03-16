@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>图像和超链接</title>
+</head>
+<body>
+<!--6 图片 -->
+<!--相对路径:以当前页面(HTML)为起点,写出图片的相对位置即可.-->
+<p>
+
+    <img src="../image/dengpao.png" width="200" />
+    <img src="../image/wenyi.png" width="200" />
+</p>
+
+<!-- 7 超链接元素-->
+<p>
+    <a href="http://huaban.com/" target="_blank">花瓣网</a>
+</p>
+
+<!--8 锚点:定义锚点\链接到锚点-->
+
+<ol>
+    <li>上海</li>
+    <li>深圳</li>
+    <li><a href="#再放花生">广州</a></li>
+</ol>
+<ul>
+    <li>南京</li>
+    <li>上海</li>
+    <li>扬州</li>
+</ul>
+<ol>
+    <li>
+
+        Web概述
+        <ul>
+            <!-- 定义一个锚点-->
+            <li><a name="#sanyaosu">Web三要素</a></li>
+            <li>常用浏览器</li>
+            <li>HTML工作原理</li>
+        </ul>
+    </li>
+    <li>
+        陕西省
+        <ul>
+            <li>西安</li>
+            <li>宝鸡</li>
+            <li>咸阳</li>
+        </ul>
+    </li>
+</ol>
+<div>
+    <p>这里应该放一张logo图片</p>
+</div>
+<div style="color: red;">
+    <h1>宫保鸡丁的做法</h1>
+    <p>先放鸡肉</p>
+    <p><a name = "再放花生"></a></p>
+</div>
+<div>
+
+    <p><a href="##sanyaosu">版</a>权标识</p>
+</div>
+
+<!-- 锚点特例 页面顶部默认是一个锚点,并且没有名字.-->
+<p>
+    <a href="#" >回到顶部</a>
+</p>
+
+</body>
+</html>
