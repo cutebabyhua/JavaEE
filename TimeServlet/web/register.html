@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+</head>
+<body>
+<!--
+    绝对路径:/TimeServlet/register
+    相对路径(网页和Servlet相对):
+-->
+    <form action="RegistServlet" method="post" >
+        <p> 账号:<input type="text" name="username"/></p>
+        <p> 密码:<input type="password" name="password" /></p>
+       <p>
+           性别:
+           <!-- name有两层用处,1设置组用于互斥 2用于控件加name属性设置数据的名称-->
+           <input type="radio" name="sex" value="male"/>男
+           <input type="radio" name="sex" value="female"/>女
+       </p>
+        <p>
+            兴趣:
+            <!--设置value属性-->
+            <input type="checkbox" name="interest" value="swim"/>游泳
+            <input type="checkbox" name="interest" value="run"/>跑步
+            <input type="checkbox"name="interest" value="ride"/>骑行
+        </p>
+        <p>
+            <input type="submit" value="注册"/>
+        </p>
+
+    </form>
+</body>
+</html>

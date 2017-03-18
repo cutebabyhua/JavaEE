@@ -11,5 +11,12 @@
         <servlet-name>timeServlet</servlet-name>
         <servlet-class>TimeServlet</servlet-class>
     </servlet>
-
+    <servlet>
+        <servlet-name>registServlet</servlet-name>
+        <servlet-class>RegistServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    <servlet-name>registServlet</servlet-name>
+    <url-pattern>/rs</url-pattern>
+</servlet-mapping>
 </web-app>
